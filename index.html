@@ -1,9 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Anasayfa</title>
+</head>
 <body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <img src="duolingo portföy logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#Anasayfa">
+                            <img src="icon (1).png" alt="home" class="headerimg"> Anasayfa
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Hakkımızda">
+                            <img src="book.png" alt="book" class="headerimg"> Hakkımızda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Projeler">
+                            <img src="chest.png" alt="chest" class="headerimg"> Projeler
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#İletişim">
+                            <img src="contact.png" alt="contact" class="headerimg"> İletişim
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+    <!-- Anasayfa Hakkımızda kısmı -->
 
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="content">
+                    <img src="profile1.jpg" alt="Profil Fotoğrafım" class="profile-photo"> 
+                    <p class="profile-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam tenetur explicabo! Cum laborum molestias ab quasi accusamus explicabo quae eaque officia minima. Repellat, quia hic aspernatur nostrum ullam veniam.</p>
+                </div>
+            </div>
+    
+            <div class="container2">
+                <div class="content reverse">
+                    <img src="profile2.jpg" alt="Profil Fotoğrafım" class="profile-photo"> 
+                    <p class="profile-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, magni nobis repellat obcaecati ullam molestias sunt reprehenderit suscipit officia unde. Architecto quos repellat inventore recusandae temporibus, quia debitis totam aut.</p>
+                </div>
+            </div>
+    
+            <div class="container3">
+                <div class="content">
+                    <img src="profile3.jpg" alt="Profil Fotoğrafım" class="profile-photo"> 
+                    <p class="profile-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, fugit! Aspernatur eius nostrum obcaecati ipsa adipisci sapiente doloribus modi exercitationem earum alias. Natus voluptates praesentium adipisci nam omnis distinctio eos.</p>
+                </div>
+            </div>
+    
+            <div class="container4">
+                <div class="content reverse">
+                    <img src="profile4.jpg" alt="Profil Fotoğrafım" class="profile-photo"> 
+                    <p class="profile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas repellat harum et reprehenderit! Eum officiis minus expedita ratione architecto esse, atque quod non reprehenderit, nisi itaque fugiat vel iusto sint!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+      
+    
+    <div class="slider-container">
+
+        <div class="slider">
+
+            <div class="slide active">
+                <img src="wizard.png" alt="Wizard">
+            </div>
+
+            <div class="slide">
+                <img src="fire.png" alt="Fire">
+            </div>
+
+            <div class="slide">
+                <img src="scroll.png" alt="Scroll">
+            </div>
+
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">❮</button>
+        <button class="next" onclick="moveSlide(1)">❯</button>
+    </div>
 </body>
 </html>
+
