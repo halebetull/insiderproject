@@ -126,7 +126,7 @@ main {
     flex-direction: row; 
 }
 
-/* LinkedIn Logo  */
+/* Linkedin Logo  */
 
 .linkedin-logo {
     width: 30px; 
@@ -215,8 +215,7 @@ main {
 }
 
 
-/* cards */
-
+/* kart */
 
 
 .image-container {
@@ -238,7 +237,7 @@ main {
     transition: transform 0.3s ease, z-index 0.3s ease; 
 }
 
-/* Görsel boyutları */
+/* Görsel */
 
 .image img {
     width: 50%;
@@ -271,13 +270,15 @@ main {
 
 
 
-/* Footer stil */
+/* Footer */
+
 .footer {
     background-color: #58cc02;
     padding: 30px 0;             
     text-align: center;          
     color: white;                
     font-family: "League Spartan", sans-serif;
+    list-style: none;
     
 }
 
@@ -285,7 +286,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;  
+    gap: 20px;  
 }
 
 .logo-img {
@@ -295,11 +296,16 @@ main {
 .footer-image img {
     width: 150px;
     height: auto;
+    transition: all 0.3s ease-in-out;
 }
 
+.logo img:hover {
+    box-shadow: 0px 10px 20px rgba(21, 255, 0, 0.637);
+    transform: translateY(-2px);
+  }
 
 
-/* Duo resmini tam çizginin üstüne yerleştir */
+/* duo çizgide duruyor */
 
 .duo-image {
     position: absolute;
@@ -309,6 +315,15 @@ main {
 }
 
 .duo-image img {
-    width: 80px;  /* Duo resminin boyutunu ayarla */
+    width: 80px;  
     height: auto;
+}
+
+
+/* yavaş giriş */
+
+.container, .container2, .container3, .container4 {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }

@@ -114,6 +114,7 @@
     </div>
     
     <!-- duo fotoğrafı -->
+
     <img src="pngs\Duo the owl (1).png" alt="Duolingo" class="duolingo-icon">
 
 
@@ -122,19 +123,42 @@
     <div class="footer-content">
 
         <p>Tüm hakları saklıdır.®</p>
+
         <!-- Logo -->
+
         <div class="logo">
-            <img src="pngs\whitemail.png" alt="Logo" class="logo-img">
+            <li><a href="halebetly@email.com"> <img src="pngs\whitemail.png" alt="mail" class="logo-img"></a></li>
         </div>
 
     
 
-    <!-- Duo resmini footer çizgisinin üstüne ekliyoruz -->
+    <!-- Duo resmi -->
+
     <div class="duo-image">
         <img src="pngs\mailduo.png" alt="Duo">
     </div>
 </footer>
         
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+         const boxes = document.querySelectorAll(".container, .container2, .container3, .container4");
+
+    const observer = new IntersectionObserver((entries) => {
+entries.forEach((entry, index) => {
+             if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                }, index * 300); 
+             }
+        });
+    }, { threshold: 0.3 });
+
+    boxes.forEach((box) => observer.observe(box));
+});
+
+</script>
 
 </body>
 </html>
