@@ -1,2 +1,0 @@
-# insiferproject
-joint portfolio
