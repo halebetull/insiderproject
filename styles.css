@@ -87,6 +87,7 @@ nav ul li a:hover {
 section.projects {
     display: flex;
     flex-direction: column;
+    padding: 30px;
 }
 
 .project {
@@ -119,7 +120,6 @@ section.projects {
     flex-direction: column;
     justify-content: space-between;
     width: 60%;
-
 }
 
 .project-text h1 {
@@ -127,13 +127,13 @@ section.projects {
     font-family: "Lexend", sans-serif;
     font-size: 2rem;
     font-weight: bold;
-    margin: 25px 0 0 30px;
+    margin: 30px;
 }
 
 .project-text p {
     font-family: "League Spartan", sans-serif;
     font-size: 1.5rem;
-    margin: 10px 30px 10px 40px;
+    margin: 10px 40px 10px 30px;
 }
 
 .fullscreen {
@@ -160,6 +160,32 @@ section.projects {
 
 .fullscreen a:hover span {
     transform: scale(1.1);
+}
+
+@media (orientation: portrait) {
+    .project {
+        flex-direction: column;
+        height: 60rem;
+    }
+    
+    .interactive-project {
+        margin: 30px auto;
+        width: 90%;
+        height: 50%;
+    }
+
+    .project-text-part  {
+        justify-content: space-between;
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 700px) {
+    
+    html {
+        font-size: 12px;
+    }
 }
 
 /*************************************************************/
