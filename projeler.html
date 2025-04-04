@@ -117,19 +117,19 @@
         
 <script>
 
-    document.addEventListener("DOMContentLoaded", function () {
-         const boxes = document.querySelectorAll(".container, .container2, .container3, .container4");
+document.addEventListener("DOMContentLoaded", function () {
+    const boxes = document.querySelectorAll(".project"); // .project class'ına sahip div'leri seç
 
     const observer = new IntersectionObserver((entries) => {
-entries.forEach((entry, index) => {
-             if (entry.isIntersecting) {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
                 setTimeout(() => {
                     entry.target.style.opacity = "1";
                     entry.target.style.transform = "translateY(0)";
                 }, index * 300); 
-             }
+            }
         });
-    }, { threshold: 0.3 });
+    }, { threshold: 0 }); // Div ekrana girdiği anda görünür olacak
 
     boxes.forEach((box) => observer.observe(box));
 });

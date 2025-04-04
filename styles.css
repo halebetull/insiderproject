@@ -98,6 +98,9 @@ section.projects {
     border-radius: 15px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
     height: 30rem;
+    opacity: 0; /* Başlangıçta görünmez */
+    transform: translateY(50px); /* Aşağıdan yukarı animasyon */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Yumuşak geçiş efekti */
 }
 
 .interactive-project {
